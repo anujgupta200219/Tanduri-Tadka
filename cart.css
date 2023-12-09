@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*navbar*/
+
+#navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+#navbar .data {
+    display: flex;
+    position: absolute;
+    right: 34px;
+}
+
+#navbar .data li {
+    list-style: none;
+}
+
+#navbar .data li a {
+    display: block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: right;
+    font-family: 'Poppins';
+    background-color: transparent;
+    color: white;
+}
+
+#navbar .data li img {
+    display: block;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+#navbar .data,
+.logo {
+    padding: 10px;
+    color: white    ;
+}
+
+#navbar .data li a:hover {
+    color: black;
+    background-color: white;
+    font-weight: 900;
+}
+
+.logo {
+    font-family: 'Dancing Script';
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+
+.full {
+    display: flex;
+}
+
+.container {
+    width: 1100px;
+    padding-top:20px;
+
+    font-family: 'poppins';
+    font-size: 20px;
+}
+
+th,
+td {
+    padding: 20px 80px;
+    text-align: center;
+}
+
+th {
+    font-size: 25px;
+}
+
+#items td img {
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+
+}
+
+#description {
+    position: fixed;
+    width: 450px;
+    height: 100%;
+    margin: 50px auto;
+    right: 0px;
+    top: 15px;
+    background-color: #d9d1d17d;
+    font-family: 'poppins';
+}
+
+.item,
+.subtotal,
+.name,
+.address {
+    display: flex;
+    margin: 40px 10px 20px 100px;
+    font-size: 20px;
+}
+
+.desc {
+    font-weight: 700;
+    margin: 50px 0px 50px 140px;
+    font-size: 30px;
+}
+
+#item,
+#subtotal,
+#name, #address {
+    margin-left: 50px;
+    
+}
+
+.gap {
+    width: 100px;
+    font-weight: 700;
+}
+
+#order {
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    font-family: 'poppins';
+    width: 150px;
+    font-size: 17px;
+    margin: 30px 160px;
+}
+.cartimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    width: 1065px;
+}
+.cartimage p{
+    padding-top: -20px;
+    font-size: 50px;
+    font-family: 'poppins';
+    font-weight: 900;
+}
+.cartimage img{
+    padding-left: 50px;
+    width: 180px;
+    height: 80px;
+}

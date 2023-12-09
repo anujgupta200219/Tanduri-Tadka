@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(allimg/bg6.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 400px;
+    height: 320px;
+    margin: 150px auto 0px auto ;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-family: 'poppins';
+    
+}
+.container::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(188, 188, 202);
+    width: 400px;
+    height: 320px;
+    margin: 0px auto 0px auto ;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/*navbar*/
+
+#navbar {
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar .data {
+    display: flex;
+    position: absolute;
+    right:34px;
+    top:23px;
+    
+}
+
+#navbar .data li {
+    list-style: none;
+}
+#navbar .data li a {
+    display: block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+    font-family: 'Poppins';
+    background-color:transparent;
+}
+
+#navbar .data li a:hover {
+    color: black;
+    background-color: white;
+}
+#navbar .logo, .data{
+    padding-bottom: 20px;
+}
+
+/*container*/
+
+.container .box form{
+    margin: 30px;
+    font-size: 10px;
+}
+.logo{
+    font-family: 'Dancing Script';
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+}
+.container .box form input{
+    border-radius: 10px;
+    width: 325px;
+    height: 20px;
+    padding: 3px 5px;
+    
+}
+.container .box .heading h1{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container .box form h2{
+    padding-top: 7px;
+}
+.container .box form #name{
+    padding-top:0px ;
+}
+.container .box form button{
+    text-align: center;
+    padding: 10px;
+    margin:10px 5px;
+    border-radius: 10px;
+    width: 158px;
+}
+.container .box form #submit{
+    background-color: rgb(39, 129, 200);
+}
+
+.nav{
+    background-color: rgb(237, 237, 133);
+    padding: 10px;
+    margin: 0;
+    animation-name: hide;
+    animation-duration: 0.2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    border: 2px solid white;
+}
+.fail{
+    background-color: rgb(174, 22, 22);
+    padding: 10px;
+    animation-name: hide;
+    animation-duration: 0.2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes hide{
+    from{
+        margin-top: 0;
+    }
+    to{
+        margin-top: -44px;
+    }
+}
+
